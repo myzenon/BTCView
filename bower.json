@@ -1,0 +1,22 @@
+{
+  "name": "btcview",
+  "version": "1.0.0",
+  "description": "View Bitcoin Currency in Real-Time",
+  "authors": [
+    "Zenon 'SI <si.zenon@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "materialize": "~0.97.0",
+    "reset-css": "~2.0.2011012602",
+    "angular": "~1.4.2",
+  }
+}

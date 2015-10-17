@@ -1,0 +1,14 @@
+<div class="col s12 m4" ng-repeat="price in prices">
+	<div class="card grey darken-3">
+		<div class="card-content">
+			<img ng-src="img/{{ price.img.src }}" alt="{{ price.img.alt }}">
+			<div class="pricebar" ng-repeat="(key,type) in price.type">
+				<div class="left">{{ key | uppercase }}</div>
+				<div class="right">
+					<div ng-repeat="(key,value) in type">{{ key | uppercase }} {{ key != '' ? ':' : '&nbsp;'}} {{ key == 'usd' ? '$' : '' }}{{ key == 'cny' ? '¥' : '' }}{{ key == 'baht' ? '฿' : '' }} {{ value != '' ? (value | number:2) : '' }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
